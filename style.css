@@ -6,18 +6,22 @@
     font-weight: 600;
     font-size: 16px;
     text-decoration: none;
-    color: white;
+    color: #670000;
 }
 
 body {
     background-color: #ffefae;
+     height: 100vh; 
 }
 
 header {
+    /* position: fixed; */
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 30px;
+    height:15vh;
+    /* flex-direction: row-reverse; */
 }
 
 .logo {
@@ -28,12 +32,14 @@ header {
 #navLinks {
     list-style: none;
     display: flex;
+    
 }
 
 #navLinks li {
     border-width: 5px;
     margin: 0px 10px;
     padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 #navLinks li a {
@@ -43,6 +49,7 @@ header {
 }
 
 #navLinks li a:hover {
+
     color: #0088a9;
     border-bottom: 3px solid #000;
     padding-bottom: 15px;
@@ -50,22 +57,40 @@ header {
 }
 
 .cta {
-    padding: 15px 25px;
+    padding: 20px 30px;
     transition: 0.6s;
-    background-color: #670000;
+    color: white;
+    background-color: #950000;
     border: none;
     cursor: pointer;
     background-position: right;
     transition: all 0.3s ease 0s;
-    border-radius: 5px;
     -webkit-box-shadow: 5px 5px 21px -4px #000000; 
     box-shadow: 5px 5px 21px -4px #000000;
+    /* -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 21px -4px rgba(0,0,0,0); 
+box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 21px -4px rgba(0,0,0,0); */
 }
 
 .cta:hover {
-    padding: 15px 25px;
-    background-color: blueviolet;
+    padding: 20px 45px;
+    background-color: #670000;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
+
+/* .big-name{
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 300px 0px;
+}
+.big-name h1{
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+} */
