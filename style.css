@@ -8,12 +8,14 @@
     text-decoration: none;
     color: #670000;
 }
+
 html {
     font-size: 16px;
-  }
+}
+
 body {
     background-color: #ffefae;
-     /* height: 100vh;  */
+    height: 100vh;
 }
 
 header {
@@ -21,17 +23,17 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 20px;
     /* height:15vh; */
     position: fixed;
     width: 100%;
     flex-wrap: wrap;
     background-color: #ffefae;
     box-shadow: rgba(2, 12, 27, 0.7) 0px 0px 30px 0px;
-    padding-bottom: 30px;
-
+    padding-bottom: 20px;
     /* flex-direction: row-reverse; */
 }
+
 .logo {
     cursor: pointer;
     /* margin-right: auto; */
@@ -58,11 +60,9 @@ header {
 }
 
 #navLinks li a:hover {
-    
     color: #0088a9;
     border-bottom: 3px solid #000;
     padding-bottom: 15px;
-    
 }
 
 .cta {
@@ -74,7 +74,7 @@ header {
     cursor: pointer;
     background-position: right;
     transition: all 0.3s ease 0s;
-    -webkit-box-shadow: 5px 5px 21px -4px #000000; 
+    -webkit-box-shadow: 5px 5px 21px -4px #000000;
     box-shadow: 5px 5px 21px -4px #000000;
     /* -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 21px -4px rgba(0,0,0,0); 
     box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 21px -4px rgba(0,0,0,0); */
@@ -88,58 +88,90 @@ header {
     /* transition: all 0.3s ease 0s; */
 }
 
-.mid-section{
+.mid-section {
     display: flex;
     flex-flow: column;
     justify-content: center;
     height: 100vh;
     width: 100%;
     align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+#banner h1 {
+    /* font-size: 15vw; */
+    font-size: 15vw;
+    font-weight: 500;
+}
+
+#banner span {
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+.mid-section #container {
     flex-wrap: wrap;
 }
-        #banner h1{
-            /* font-size: 15vw; */
-            font-size: 15vw;
-            font-weight: 500;
-        }
-        #banner span{
-            font-size: 2vw;
-            font-weight: 300;
-        }
-        .mid-section #container{
-            flex-wrap: wrap;
-            
-        }
-        #banner #desc{
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: flex-end;
-                flex-wrap: wrap;
-        
-        }
 
-      #about #container article{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            /* flex-wrap: wrap; */
-        }
+#banner #desc {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
 
-        #about #container article div h1{
-            font-size: 7vw;
-        }
-        #about #container article div {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-/* max-width: 50%; */
-justify-content: space-between;
-        }
-        #about #container article div p{
-            font-size: 1vw;
-        }
-        #about #container article img{
-            width: 40%;
-        }
+/* second section */
+
+.mid-section#about{
+    height: 100vh;
+    width: 95%;
+    background-color: white;
+
+}
+
+.mid-section#about article{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mid-section#about article #first-half{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    width: 100%;
+}
+
+.mid-section#about article #first-half div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 40%;
+}
+.mid-section#about article #first-half img{
+
+    width: 40%;
+}
+.mid-section#about article #first-half div h1{
+
+font-size: 100px;}
+.mid-section#about article #first-half div p{
+font-weight: 500;
+font-size: 20px;}
+
+.mid-section#about article #second-half{
+    width: 100%;
+display: flex;
+justify-content: space-around;
+}
+.mid-section#about article #second-half div span{
+font-size: 40px;
+}
+.mid-section#about article #second-half div p{
+font-weight: 500;
+}
