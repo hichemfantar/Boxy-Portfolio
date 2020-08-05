@@ -1,3 +1,7 @@
+:root{
+    --primary-color:#670000;
+    --secondary-color:#ffefae;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +18,7 @@ html {
 }
 
 body {
-    background-color: #ffefae;
+    background-color: var(--secondary-color);
     height: 100vh;
 }
 
@@ -23,15 +27,16 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 20px;
+    padding: 20px 0px;
     /* height:15vh; */
     position: fixed;
     width: 100%;
     flex-wrap: wrap;
     background-color: #ffefae;
     box-shadow: rgba(2, 12, 27, 0.7) 0px 0px 30px 0px;
-    padding-bottom: 20px;
     /* flex-direction: row-reverse; */
+    transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+
 }
 
 .logo {
@@ -55,7 +60,7 @@ header {
 
 #navLinks li a {
     padding: 0px 20px;
-    color: #670000;
+    color: var(--primary-color);
     transition: all 0.3s ease 0s;
 }
 
