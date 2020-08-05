@@ -1,5 +1,7 @@
 // When the user scrolls down 50px from the top of the document, resize the header's font size
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -8,3 +10,10 @@ function scrollFunction() {
     document.getElementsByTagName("header")[0].style.padding = "20px 0px";
   }
 }
+// function scrollFunction() {
+//   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+//     document.getElementsByTagName("header")[0].className = "vert-header";
+//   } else {
+//     document.getElementsByTagName("header")[0].className = "hor-header";
+//   }
+// }
